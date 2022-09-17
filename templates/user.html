@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Top Articles at familug</title>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+}
+td {
+  text-align: left;
+  vertical-align: top;
+}
+</style>
+</head>
+<body>
+
+<table style="width:100%">
+  <caption><h2>Articles in label</h2></caption>
+  <thead>
+  <tr>
+    <th>Name: {{user_name}}</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td> 
+      <ol>
+        {% for resume_id in resumes %}
+        <li><a href='/resume/{{resume_id}}'>CV_{{resume_id}}</a></li>
+        {% endfor %}     
+    </ol> 
+    </td>
+</tbody>
+</table>
+</ul></p></ul><p style="text-align: center;font-size:120%;"><a href='/addcv/'>ADD CV</a></p>
+
+</body>
+</html>
